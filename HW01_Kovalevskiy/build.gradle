@@ -1,0 +1,23 @@
+dependencies {
+    // junit
+    testImplementation libraries.junit
+
+    // assertj
+    testImplementation libraries.assertj
+
+    // log4J
+    compileOnly libraries.log4j
+    runtimeOnly libraries.log4j
+    testCompileOnly libraries.log4j
+
+    compileOnly libraries.log4j_extras
+    runtimeOnly libraries.log4j_extras
+
+    // lombok
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+}
+
+description = 'home_work_01'
