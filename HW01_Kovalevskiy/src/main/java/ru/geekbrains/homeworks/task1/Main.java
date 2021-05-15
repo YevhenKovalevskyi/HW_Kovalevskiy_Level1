@@ -1,6 +1,6 @@
 package ru.geekbrains.homeworks.task1;
 
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import ru.geekbrains.homeworks.helpers.NumbersHelper;
 import ru.geekbrains.homeworks.utils.ConsoleColors;
 
@@ -12,7 +12,7 @@ import java.util.Arrays;
  * @author e.kovalevskiy
  * @version 1.0
  */
-@Log4j
+@Slf4j
 public class Main {
     
     public static void main(String[] args) {

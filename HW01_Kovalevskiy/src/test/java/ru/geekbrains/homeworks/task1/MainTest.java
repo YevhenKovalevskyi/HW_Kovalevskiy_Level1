@@ -1,13 +1,13 @@
 package ru.geekbrains.homeworks.task1;
 
-import lombok.extern.log4j.Log4j;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.*;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@Log4j
+@Slf4j
 public class MainTest {
     
     @Rule
@@ -28,7 +28,7 @@ public class MainTest {
                 builder.append(' ').append(e);
             }
             
-            log.info(builder);
+            log.info(builder.toString());
             log.info("");
         }
         

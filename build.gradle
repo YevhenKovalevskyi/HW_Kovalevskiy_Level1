@@ -17,10 +17,11 @@ subprojects {
     }
 
     ext.libraries = [
+        lombok: "org.projectlombok:lombok:1.18.16",
         junit: "junit:junit:4.9",
-        assertj: "org.assertj:assertj-core:3.6.1",
-        log4j: "log4j:log4j:1.2.17",
-        log4j_extras: "log4j:apache-log4j-extras:1.2.17",
-        lombok: "org.projectlombok:lombok:1.18.16"
+        assertj_core: "org.assertj:assertj-core:3.6.1",
+        slf4j_api: "org.slf4j:slf4j-api:1.7.30",
+        logback_core: "ch.qos.logback:logback-core:1.2.3",
+        logback_classic: "ch.qos.logback:logback-classic:1.2.3",
     ]
 }
