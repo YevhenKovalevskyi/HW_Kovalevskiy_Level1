@@ -1,0 +1,28 @@
+dependencies {
+    // lombok
+    compileOnly libraries.lombok
+    annotationProcessor libraries.lombok
+    testCompileOnly libraries.lombok
+    testAnnotationProcessor libraries.lombok
+
+    // junit
+    testImplementation libraries.junit
+
+    // assertj
+    testImplementation libraries.assertj_core
+
+    // slf4j
+    compileOnly libraries.slf4j_api
+    runtimeOnly libraries.slf4j_api
+    testCompileOnly libraries.slf4j_api
+    // logback_core
+    compileOnly libraries.logback_core
+    runtimeOnly libraries.logback_core
+    testCompileOnly libraries.logback_core
+    // logback_classic
+    compileOnly libraries.logback_classic
+    runtimeOnly libraries.logback_classic
+    testCompileOnly libraries.logback_classic
+}
+
+description = 'home_work_02'
