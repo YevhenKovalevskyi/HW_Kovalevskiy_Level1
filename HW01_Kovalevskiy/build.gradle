@@ -5,8 +5,8 @@ dependencies {
     testCompileOnly libraries.lombok
     testAnnotationProcessor libraries.lombok
 
-    // junit
-    testImplementation libraries.junit
+    // junit4
+    testImplementation libraries.junit4
 
     // assertj
     testImplementation libraries.assertj_core

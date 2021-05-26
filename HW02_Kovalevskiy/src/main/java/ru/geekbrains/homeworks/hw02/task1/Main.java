@@ -1,7 +1,7 @@
-package ru.geekbrains.homeworks.task1;
+package ru.geekbrains.homeworks.hw02.task1;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.geekbrains.homeworks.helpers.NumbersHelper;
+import ru.geekbrains.homeworks.hw02.helpers.NumbersHelper;
 
 import java.util.Collections;
 
