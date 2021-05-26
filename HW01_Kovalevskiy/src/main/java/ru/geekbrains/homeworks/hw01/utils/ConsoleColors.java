@@ -1,4 +1,4 @@
-package ru.geekbrains.homeworks.utils;
+package ru.geekbrains.homeworks.hw01.utils;
 
 /**
  * ConsoleColors Class belonging to utilities

@@ -1,4 +1,4 @@
-package ru.geekbrains.homeworks.helpers;
+package ru.geekbrains.homeworks.hw02.helpers;
 
 /**
  * NumbersHelper Class is a helper class for different work with numbers
@@ -56,5 +56,15 @@ public final class NumbersHelper {
      */
     public static long factorial(int number) {
         return (number == 1) ? 1 : number * NumbersHelper.factorial(number - 1);
+    }
+    
+    /**
+     * The method takes an integer and checks its sign
+     *
+     * @param x integer
+     * @return result of checking: [0 -neg, 1 - zero, 2 - pos]
+     */
+    public static int checkNumberSign(int x) {
+        return 1 + (x >> 31) - (-x >> 31);
     }
 }

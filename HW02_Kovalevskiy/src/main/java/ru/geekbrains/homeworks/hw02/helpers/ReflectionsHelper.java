@@ -1,4 +1,4 @@
-package ru.geekbrains.homeworks.helpers;
+package ru.geekbrains.homeworks.hw02.helpers;
 
 /**
  * ReflectionsHelper Class is a helper class for different work with reflections

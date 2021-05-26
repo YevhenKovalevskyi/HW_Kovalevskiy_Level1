@@ -1,4 +1,4 @@
-package task1;
+package ru.geekbrains.homeworks.hw02.task1;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.AfterClass;
@@ -7,7 +7,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.TestWatcher;
 import org.junit.runner.Description;
-import ru.geekbrains.homeworks.task1.Main;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
