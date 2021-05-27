@@ -3,3 +3,4 @@ rootProject.name = 'HW_Kovalevskiy'
 include(':HW01_Kovalevskiy')
 include(':HW02_Kovalevskiy')
 include(':HW03_Kovalevskiy')
+include(':HW05_Kovalevskiy')
