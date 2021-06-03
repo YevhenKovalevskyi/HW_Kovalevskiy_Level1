@@ -3,6 +3,9 @@
 *.war
 *.ear
 
+#logs
+*.log
+
 # Maven
 log/*
 target/
