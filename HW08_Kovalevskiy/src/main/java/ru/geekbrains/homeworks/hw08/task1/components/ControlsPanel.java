@@ -31,7 +31,7 @@ public class ControlsPanel extends JPanel {
     
         JButton[] buttons = {
                 getPiButton(), getExpButton(), getClearButton(), getDeleteButton(),
-                getOpenBracketButton(), getCloseBracketButton(), getFactorialButton(), getDivisionButton(),
+                getSquareRootButton(), getSquareButton(), getFactorialButton(), getDivisionButton(),
                 getDigitButton("7"), getDigitButton("8"), getDigitButton("9"), getMultiplyButton(),
                 getDigitButton("4"), getDigitButton("5"), getDigitButton("6"), getSubtractionButton(),
                 getDigitButton("1"), getDigitButton("2"), getDigitButton("3"), getAdditionButton(),
@@ -97,6 +97,38 @@ public class ControlsPanel extends JPanel {
                 String inputText = (length == 1) ? InputPanel.INPUT_DEFAULT_VALUE : currText.substring(0, length - 1);
                 
                 inputField.setText(inputText);
+            }
+        });
+        
+        return button;
+    }
+    
+    private JButton getSquareRootButton() {
+        JButton button = new JButton("\u221A");
+        
+        button.addActionListener(e -> {
+            String currText = inputField.getText();
+    
+            if (Pattern.compile("^\\d+$").matcher(currText).find()) {
+                double number = Double.parseDouble(currText);
+                
+                inputField.setText(String.valueOf(Math.sqrt(number)));
+            }
+        });
+        
+        return button;
+    }
+    
+    private JButton getSquareButton() {
+        JButton button = new JButton("x\u00B2");
+        
+        button.addActionListener(e -> {
+            String currText = inputField.getText();
+    
+            if (Pattern.compile("^\\d+$").matcher(currText).find()) {
+                double number = Double.parseDouble(currText);
+
+                inputField.setText(String.valueOf(Math.pow(number, 2)));
             }
         });
         
@@ -264,29 +296,5 @@ public class ControlsPanel extends JPanel {
             
             inputField.setText(newText + btnValue);
         }
-    }
-    
-    /* For the future */
-    private JButton getOpenBracketButton() {
-        JButton button = new JButton("(");
-        
-        button.addActionListener(e -> {
-            String currText = inputField.getText();
-            inputField.setText(currText + ((JButton) e.getSource()).getText());
-        });
-        
-        return button;
-    }
-    
-    /* For the future */
-    private JButton getCloseBracketButton() {
-        JButton button = new JButton(")");
-        
-        button.addActionListener(e -> {
-            String currText = inputField.getText();
-            inputField.setText(currText + ((JButton) e.getSource()).getText());
-        });
-        
-        return button;
     }
 }
